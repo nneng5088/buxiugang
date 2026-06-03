@@ -1,0 +1,69 @@
+.protect-lock {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #102033;
+  background:
+    linear-gradient(135deg, rgba(7, 31, 55, 0.96), rgba(15, 139, 141, 0.92)),
+    repeating-linear-gradient(120deg, #687986 0, #687986 1px, #99a6b1 1px, #99a6b1 12px);
+}
+
+.protect-box {
+  width: min(420px, 100%);
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.protect-box h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  color: #0b2f55;
+}
+
+.protect-box p {
+  margin: 0 0 18px;
+  color: #607086;
+}
+
+.protect-row {
+  display: flex;
+  gap: 10px;
+}
+
+.protect-row input {
+  min-width: 0;
+  flex: 1;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #dde5ee;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.protect-row button {
+  height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background: #0f8b8d;
+  font-weight: 750;
+}
+
+.protect-error {
+  min-height: 22px;
+  margin-top: 12px;
+  color: #b3261e;
+  font-size: 14px;
+}
+
+@media (max-width: 520px) {
+  .protect-row {
+    flex-direction: column;
+  }
+}
