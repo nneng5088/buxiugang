@@ -16,3 +16,5 @@ cookies/
 *.token
 node_modules/
 .DS_Store
+work/
+.wrangler/
